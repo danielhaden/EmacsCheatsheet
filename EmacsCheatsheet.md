@@ -8,6 +8,12 @@
 `C-x 2` : Split window horizontally \
 `C-x 3` : Split view vertically 
 
+## Navigation & Scrolling
+`C-a` : Move cursor to beginning of current line \
+`M-a` : Move cursor to beginning of current sentence \
+`C-e` : Move cursor to end of current line \
+`M-e` : Move cursor to end of current sentence
+
 ## Files & Buffers ##
 `C-x C-f` : Find file or create new file \
 `C-x C-s` : Save file
@@ -22,7 +28,9 @@
 `C-c C-c` : Compile current \
 `C-c C-l` : Load file, prompts for file with current as default \
 `C-c C-k` : Compile and load the file represented by the current buffer \
-`C-c C-z` : Go to REPL
+`C-c C-z` : Go to REPL \
+`M-p` : Pull up previous input \
+`M-n` : Pull up next input 
 
 ## Cutting (Yanking) & Pasting ##
 
