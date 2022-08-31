@@ -1,3 +1,6 @@
+## Config File
+`~/.emacs.d/init.el`
+
 ## Undo & Go Back ##
 `C-g` : Cancel current command \
 `C-x k` : Kill current buffer \
@@ -9,6 +12,8 @@
 `C-x 3` : Split view vertically 
 
 ## Navigation & Scrolling
+`C-v` : Page down
+`M-v` : Page up
 `C-a` : Move cursor to beginning of current line \
 `M-a` : Move cursor to beginning of current sentence \
 `C-e` : Move cursor to end of current line \
@@ -33,4 +38,17 @@
 `M-n` : Pull up next input 
 
 ## Cutting (Yanking) & Pasting ##
+`C-w` : Cut selection \
+`M-w` : Copy selection \
+`C-y` : Paste selected text' \
+`C-a C-` : Kill line \
+`C-S-[backspace]` : Kill line
+
+## Packages
+`M-x package-list-packages` \
+`M-x package-refresh-contents` \
+`M-x package-install`
+
+## SmartParens Package
+`M-x sp-cheat-sheet` : See all available SmartParens commands
 
