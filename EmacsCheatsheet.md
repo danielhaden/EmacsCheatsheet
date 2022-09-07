@@ -25,8 +25,12 @@
 `C-x s` : Save modified buffers and confirm each \
 `C-x C-w` : Save file as \
 `C-x C-b` : List buffers in other window \
+`C-x o` : Swithc to other buffer in split-screen viewing (minibuffer is included) \
 `C-x b` : Select buffer;, prompts for buffer name \
-`C-x k` : Kill buffer, prompts for buffer name 
+`C-x k` : Kill buffer, prompts for buffer name \
+`C-x b [name]` : Select or create a buffer \
+`C-x 4 b [name]` : Select or create a buffer in another window \
+`C0x 5 b [name]` : Select or create a buffer in a separate frame 
 
 ## REPL & Compilation ##
 `M-x slime` : Open Slime REPL \
@@ -50,5 +54,6 @@
 `M-x package-install`
 
 ## SmartParens Package
-`M-x sp-cheat-sheet` : See all available SmartParens commands
+`M-x sp-cheat-sheet` : See all available SmartParens commands \
+`M-x smartparens-mode` : Start using SmartParens
 
