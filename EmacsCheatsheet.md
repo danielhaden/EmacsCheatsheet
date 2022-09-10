@@ -45,8 +45,12 @@
 `C-w` : Cut selection \
 `M-w` : Copy selection \
 `C-y` : Paste selected text' \
+`C-[space] [direction cmd]` : Start selection from cursor (inclusive) to the location of the direction command \ 
 `C-a C-` : Kill line \
-`C-S-[backspace]` : Kill line
+`C-S-[backspace]` : Kill line \
+### Compound Exmaples
+`C-a C-[space] C-e M-w` : Copy current line
+`C-a C-[space] C-n M-w` : Copy current line including the newline char \
 
 ## Packages
 `M-x package-list-packages` \
