@@ -1,0 +1,20 @@
+||| SLIME |||
+C-{c k}    : compile & load
+M-x slime  : start REPL
+C-{c ]}    : close all open brackets of current s-expr
+C-{c n}    : compile top-level form
+M-n        : slime-next-note
+M-p        : slime-previous-note
+C-c TAB    : complete symbol
+C-c RETURN : macroexpand interactively
+C-{c t}    : slime-toggle-fancy-trace
+C-{c w c}  : slime-who-calls
+C-{c d d}  : describe symbol
+
+||| Git & Magit |||
+C-x g    : magit-status
+s   	 : magit-stage
+i	 : magit-ignore
+k        : discard
+g        : refresh
+c        : magit-commit-popup
