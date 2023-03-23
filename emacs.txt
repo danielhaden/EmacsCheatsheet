@@ -18,3 +18,8 @@ i	 : magit-ignore
 k        : discard
 g        : refresh
 c        : magit-commit-popup
+P	 : magit-push-popup
+P	 : magit-invoke-popup-action
+$	 : magit-process-buffer
+F	 : magit-pull-popup
+F	 : magit-invoke-popup-action
