@@ -13,6 +13,7 @@ C-{c d d}  : describe symbol
 
 ||| Git & Magit |||
 C-x g    : magit-status
+?   	 : transient buffer - see all keys
 s   	 : magit-stage
 i	 : magit-ignore
 k        : discard
