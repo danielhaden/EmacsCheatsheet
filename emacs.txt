@@ -1,6 +1,8 @@
-||| SLIME |||
+||| Evaluation & SLIME |||
 C-{c k}    : compile & load
-M-x slime  : start REPL
+M-x slime      : start SLIME REPL (Lisp)
+M-x run-geiser : start Geiser REPL (Racket, Scheme)
+
 C-{c ]}    : close all open brackets of current s-expr
 C-{c n}    : compile top-level form
 M-n        : slime-next-note
@@ -10,6 +12,7 @@ C-c RETURN : macroexpand interactively
 C-{c t}    : slime-toggle-fancy-trace
 C-{c w c}  : slime-who-calls
 C-{c d d}  : describe symbol
+M-x eval-buffer : evaluate the current buffer
 
 ||| Git & Magit |||
 C-x g    : magit-status
@@ -23,8 +26,83 @@ g        : refresh
 c        : magit-commit-popup
 C-{c c}  : finish commit
 P	 : magit-push-popup
-P	 : magit-invoke-popup-action
 $	 : magit-process-buffer
 F	 : magit-pull-popup
-F	 : magit-invoke-popup-action
 l        : magit-log-popup
+
+||| Dired |||
+C-x d    : open dired mode
+C-x C-k  : move to current buffer
+R        : rename selected
++        : create directory
+
+||| Commands |||
+C-h f    : see command keybindings
+
+||| Cutting, Copying & Pasting |||
+C-y      : yank (paste) the last kill into the buffer at point
+C-k	 : kill the current line
+M-w	 : copy
+C-w	 : cut
+C-SPC    : set the mark at point, and activate it (set-mark-command)
+
+||| Search & Replace |||
+C-s [pattern]    : find string
+M-x replace-string RET string RET newstring RET : Replace every occurance of *string* w/ *newstring*
+M-x rgrep        : search all files in current directory and subdirectories
+M-x lgrep        : search some files of current directory by using a regex on file names first.
+
+||| Movement, Navigation & View |||
+C-x 0    : delete the active window
+C-x 1    : delete other windows
+C-x 2    : split horizontally
+C-x 3    : split vertically
+C-x 5 1  : close all other panes
+C-x 5 2  : open a new pane
+C-x C--  : zoom out
+C-x C-+  : zoom in
+
+||| Configuration |||
+M-x package-install RET [package-name] RET
+
+||| Customization Interface |||
+M-x customize
+    customize-browse
+    customize-customized
+    customized-changed
+    customize-face
+    customize-group
+    customize-mode
+
+||| Git Configuration |||
+git remote -v
+git config --global user.name ""
+git config --global user.email ""
+git remote add origin https://[TOKEN]@github.com/[USERNAME]/[REPO NAME].git
+git config -l
+git push -u origin master
+git fetch origin master
+
+||| Racket & Geiser |||
+M-x run-geiser   : start Scheme REPL
+
+||| Pollen Mode |||
+pollen-server-start  :  start a Pollen server instance
+@ -> ◊               : '@' is conveted to lozenge
+
+||| Kaizen to do |||
+copy line below
+inject "(in-package :common-lisp-user)"
+go to line #
+McCLIM popup builder
+see what keys a command is bound to
+- define-application-frame
+- panes
+- layout
+- insert encapsulated vertical/horizontal layout
+- fix indentation
+- commenting out lines and selections
+- running shell
+- search from current directory
+- command log
+- mv files in dired
